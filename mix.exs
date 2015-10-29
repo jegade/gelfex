@@ -7,6 +7,8 @@ defmodule Gelfex.Mixfile do
      elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: description,
+     package: package,
      deps: deps]
   end
 
@@ -37,8 +39,14 @@ defmodule Gelfex.Mixfile do
     ]
   end
 
+  defp description do
+    """
+    Elixir client for logging GELF messages to Graylog.
+    """
+  end
+
   defp package do
-    [contributors: ["Don Pinkster"],
+    [maintainers: ["Don Pinkster"],
      licenses: ["Apache 2.0"],
      links: %{"GitHub" => "https://github.com/donpinkster/gelfex"}]
   end
