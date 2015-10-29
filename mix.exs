@@ -36,4 +36,10 @@ defmodule Gelfex.Mixfile do
       {:connection, "~> 1.0"}
     ]
   end
+
+  defp package do
+    [contributors: ["Don Pinkster"],
+     licenses: ["Apache 2.0"],
+     links: %{"GitHub" => "https://github.com/donpinkster/gelfex"}]
+  end
 end
