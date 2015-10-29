@@ -9,6 +9,7 @@ defmodule Gelfex.Mixfile do
      start_permanent: Mix.env == :prod,
      description: description,
      package: package,
+     docs: [extras: ["README.md"]],
      deps: deps]
   end
 
@@ -35,7 +36,10 @@ defmodule Gelfex.Mixfile do
   defp deps do
     [
       {:poison, "~> 1.0"},
-      {:connection, "~> 1.0"}
+      {:connection, "~> 1.0"},
+
+      {:earmark, "~> 0.1", only: :dev},
+      {:ex_doc, "~> 0.10", only: :dev},
     ]
   end
 
