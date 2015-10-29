@@ -30,7 +30,7 @@ config :gelfex,
 ```
 
 ## Usage
-To create a message and send it to Graylog:
+To create and send a message to Graylog:
 ```elixir
 message = Gelfex.Message.create(1, "This is my short message", "This is my long message")
 {:ok} = Gelfex.Connection.send(message)
