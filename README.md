@@ -1,5 +1,7 @@
 # Gelfex
 
+[![Build Status](https://travis-ci.org/donpinkster/gelfex.svg?branch=master)](https://travis-ci.org/donpinkster/gelfex)
+
 Elixir client for logging GELF messages to Graylog.
 
 At this time only the GELF TCP input is supported.
